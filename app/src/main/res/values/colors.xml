@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="awaaz_original_yellow">#F2BF16</color>
+    <color name="awaaz_account_yellow">#D1AF49</color>
+    <color name="awaaz_grey">#CDCDCB</color>
+    <color name="awaaz_edittxt_background_color">#F6F6E7</color>
+    <color name="awaaz_blue">#2196F3</color>
+    <color name="awaaz_pin_color">#A69709</color>
+    <color name="awaaz_green_color">#419545</color>
+    <color name="awaaz_eventdate_color">#9C27B0</color>
+    <color name="awaaz_red_color">#C8382D</color>
+    <color name="awaaz_event_blue_color">#C7EEF3</color>
+    <color name="awaaz_comment_back_color">#E1CEE4</color>
+    <color name="awaaz_event_title_color">#3A3F40</color>
+
+    <color name="awaaz_post_green_color">#B0BAF0</color>
+    <color name="awaaz_post_green_color_one">#C0DCA0</color>
+    <color name="awaaz_post_green_color_two">#E5B4ED</color>
+    <color name="awaaz_post_green_color_three">#A8D4DA</color>
+    <color name="awaaz_post_green_color_four">#E8BBAD</color>
+    <color name="awaaz_post_green_color_five">#CFD598</color>
+    <color name="awaaz_post_green_color_Six">#DACB9E</color>
+    <color name="awaaz_post_green_color_Sexen">#B0F0E6</color>
+
+<!--    Random Color-->
+    <array name="rainbow">
+        <item>@color/awaaz_post_green_color</item>
+        <item>@color/awaaz_post_green_color_one</item>
+        <item>@color/awaaz_post_green_color_two</item>
+        <item>@color/awaaz_post_green_color_three</item>
+        <item>@color/awaaz_post_green_color_four</item>
+        <item>@color/awaaz_post_green_color_five</item>
+        <item>@color/awaaz_post_green_color_Six</item>
+        <item>@color/awaaz_post_green_color_Sexen</item>
+    </array>
+</resources>

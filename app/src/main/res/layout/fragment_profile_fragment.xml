@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/onboarding_gradient_background"
+    tools:context=".Profile_fragment">
+
+
+   <LinearLayout
+       android:id="@+id/Account_profile_pic_layout"
+       android:layout_width="match_parent"
+       android:layout_height="320sp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:paddingTop="24sp"
+       android:background="@color/awaaz_account_yellow"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <FrameLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/account_image_view"
+          android:layout_width="200sp"
+          android:layout_height="200sp"
+         android:src="@drawable/no_pic"
+         android:layout_gravity="center"/>
+
+         <ProgressBar
+             android:id="@+id/account_image_loding"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:visibility="gone" />
+
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/account_editprofilepic_button"
+             android:layout_width="40sp"
+             android:layout_height="40sp"
+             android:src="@drawable/camera"
+             android:layout_gravity="bottom"
+             android:layout_marginLeft="150sp"/>
+      </FrameLayout>
+
+
+      <TextView
+          android:id="@+id/account_full_name"
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/outfit_medium"
+         android:layout_marginTop="10sp"
+         android:textSize="20sp"
+         android:textColor="@color/white"/>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/Account_User_detail_layout"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/Account_profile_pic_layout">
+
+
+      <EditText
+          android:id="@+id/account_frist_name_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/account_edit_text_background"
+          android:drawableStart="@drawable/ic___circle_fill"
+          android:padding="10sp"
+          android:fontFamily="@font/outfit_medium"
+          android:drawablePadding="30sp"
+         android:layout_marginRight="30sp"
+         android:layout_marginLeft="30sp"
+         android:layout_marginTop="30sp"/>
+
+
+      <EditText
+          android:id="@+id/account_last_name_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/account_edit_text_background"
+          android:drawableStart="@drawable/ic__se_circle_fill"
+          android:padding="10sp"
+          android:fontFamily="@font/outfit_medium"
+          android:drawablePadding="30sp"
+          android:layout_marginRight="30sp"
+          android:layout_marginLeft="30sp"
+          android:layout_marginTop="8sp"/>
+
+
+      <EditText
+          android:id="@+id/account_username_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/account_edit_text_background"
+          android:drawableStart="@drawable/ic_person_fill"
+          android:padding="10sp"
+          android:fontFamily="@font/outfit_medium"
+          android:drawablePadding="30sp"
+          android:layout_marginRight="30sp"
+          android:layout_marginLeft="30sp"
+          android:layout_marginTop="8sp"/>
+
+      <EditText
+          android:id="@+id/account_email_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/account_edit_text_background"
+          android:drawableStart="@drawable/ic_envelope_fill"
+          android:padding="10sp"
+          android:fontFamily="@font/outfit_medium"
+          android:editable="false"
+          android:drawablePadding="30sp"
+          android:layout_marginRight="30sp"
+          android:layout_marginLeft="30sp"
+          android:layout_marginTop="8sp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20sp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20sp"
+         android:orientation="horizontal">
+
+      <LinearLayout
+          android:id="@+id/account_Change_Password_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/button_background"
+          android:gravity="center"
+          android:layout_marginRight="5sp"
+          android:orientation="horizontal"
+          android:padding="5sp">
+
+
+         <FrameLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="2"
+             android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/account_changepassword_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Change Password"
+                android:textAlignment="center"
+                android:layout_margin="5sp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/account_changepassword_loding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+         </FrameLayout>
+      </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/account_editprofile_button"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/button_background"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:layout_marginLeft="5sp"
+             android:orientation="horizontal"
+             android:padding="5sp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+               <TextView
+                   android:id="@+id/account_edit_text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/outfit_medium"
+                   android:text="Update Details"
+                   android:textColor="@color/white"
+                   android:textAlignment="center"
+                   android:textSize="18sp"
+                   android:visibility="visible" />
+
+               <ProgressBar
+                   android:id="@+id/account_edit_loding"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:visibility="invisible" />
+            </FrameLayout>
+         </LinearLayout>
+
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

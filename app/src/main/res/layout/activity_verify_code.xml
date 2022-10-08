@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_background"
+            tools:context=".VerifyCodeActivity">
+
+            <RelativeLayout
+                android:id="@+id/verifycode_upperContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/verifycode_backbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:background="#00000000"
+                    android:onClick="Back"
+                    android:src="@drawable/ic_arrow_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/outfi_bold"
+                    android:text="Verify Code"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/verifycode_image"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginRight="25sp"
+                android:src="@drawable/verifyimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifycode_upperContainer" />
+
+            <TextView
+                android:id="@+id/verifycode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="25sp"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifycode_image" />
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/verifycode_PinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:cursorVisible="true"
+                android:inputType="numberSigned"
+                android:padding="10sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/black"
+                app:cursorWidth="5dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="50sp"
+                app:itemRadius="2sp"
+                app:itemSpacing="6sp"
+                app:itemWidth="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifycode_textview"
+                app:lineColor="@color/awaaz_pin_color"
+                app:lineWidth="3sp"
+                app:viewType="rectangle"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/verifycode_VerifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifycode_PinView">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/verifycode_verify_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Verify"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:visibility="visible" />
+
+                    <ProgressBar
+                        android:id="@+id/verifycode_verify_loding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verifycode_VerifyButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

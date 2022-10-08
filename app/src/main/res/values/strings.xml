@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Awaaz</string>
+    <string name="awaaz_slogan">A Voice For Change</string>
+    <string name="awaaz_welcome">Welcome to Awaaz!</string>
+    <string name="awaaz_login_text">Login</string>
+    <string name="awaaz_onboarding_startbutton_text">Get Start</string>
+    <string name="awaaz_register_verify_text">Verify Email</string>
+    <string name="awaaz_name_with_slogan">AWAAZ THE NGO : A VOICE FOR CHANGE</string>
+    <string name="awaaz_about_us_des">Awaaz The Ngo : A Voice for Change is a National Level Working Registered Non Governmental Organization Registered under Society Registration Act, 1860. Our Aim is to Serve Society and create Social Awareness.</string>
+    <string name="awaaz_about_us_address">Awaaz Head Office 786/21\nPreet Vihar\nBulandshahr, Uttar Pradesh 203001India</string>
+    <string name="awaaz_about_us_number">070552 57379</string>
+
+
+    <!--For Onboarding Screens Headings-->
+    <string name="first_heading">Our Project\nEducate To Enpower</string>
+    <string name="second_heading">Our Project\nGo Green Go Clean</string>
+    <string name="third_heading">Our Project\nHealthy Hindustan</string>
+    <string name="fourth_heading">Our Project\nKhel India Khel</string>
+
+    <!--For Onboarding Screens Description-->
+    <string name="first_description">Education has the power to transform society in a single genration provide children with the protection they need from poverty, exploitation and disease, and give them the knowledge, skills and confidence to reach their full potential.</string>
+    <string name="second_description">Awaaz NGO has started this "Go Green Go Clean" drive in which it organises various cleaniness and Plantation drives in different cities where children and adults come together to clean a dirty place and plant trees on that area.</string>
+    <string name="third_description">The Awaaz NGO’s "Healthy Hindustan" campaign aims at preparing students and volunteers to tackle today’s most pressing global health challenges.</string>
+    <string name="fourth_description">Awaaz NGO are establishing Sports Clinic for the Sports people at different locations of the country where the Sports person can get all Information related to the Upcoming Sports Event in or out of the country,</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

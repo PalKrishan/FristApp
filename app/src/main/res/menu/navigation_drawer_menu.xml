@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/drawer_home"
+        android:icon="@drawable/ic_house_door_fill"
+        android:title="Home"
+        android:checked="true"/>
+
+    <item android:id="@+id/drawer_events"
+        android:icon="@drawable/ic_calendar3_event_fill"
+        android:title="Events"/>
+
+    <item android:id="@+id/drawer_profile"
+        android:icon="@drawable/ic_person_square"
+        android:title="Account"/>
+
+    <item android:title="Donation">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item android:id="@+id/drawer_thingd"
+                android:title="Things Donate"
+                android:icon="@drawable/ic_charity_donation_hand_love_icon"/>
+
+            <item android:id="@+id/drawer_moneyd"
+                android:title="Money Donate"
+                android:icon="@drawable/ic_hand_money_yen_coin_icon"/>
+            </group>
+        </menu>
+    </item>
+    </group>
+
+    <item android:title="Follow Us">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item android:id="@+id/drawer_fb"
+                android:title="Facebook"
+                android:icon="@drawable/ic_facebook"/>
+
+            <item android:id="@+id/drawer_insta"
+                android:title="Instagram"
+                android:icon="@drawable/ic_instagram"/>
+
+            <item android:id="@+id/drawer_twitter"
+                android:title="Twitter"
+                android:icon="@drawable/ic_twitter"/>
+
+            <item android:id="@+id/drawer_youtube"
+                android:title="Youtube"
+                android:icon="@drawable/ic_youtube"/>
+
+            <item android:id="@+id/drawer_about"
+                android:title="About Us"
+                android:icon="@drawable/ic_info_circle_fill"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item android:id="@+id/drawer_logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_box_arrow_right"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
